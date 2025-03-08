@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffedf0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+        }
+        .hidden-message {
+            display: none;
+            font-size: 1.2em;
+            color: #333;
+            text-align: left;
+        }
+        .btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #d63384;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #b82d70;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hi mahal, open this!</h2>
+        <button class="btn" onclick="revealMessage()">Open Gift</button>
+        <div class="hidden-message" id="message">
+            <p><strong>To My Love, Matthew Levi,</strong></p>
+            <p>There are moments in life that change everything—moments that feel like fate has been patiently waiting for the perfect time to reveal its masterpiece. And right now, this is one of those moments.</p>
+            <p>From the very beginning, you have been someone different. Not just another name, not just another passing memory. You are the warmth that melted the walls I built around my heart, the light that illuminated the corners of my soul that I thought would remain in darkness forever. You showed me love not as something reckless or fleeting, but as something real, steady, and safe.</p>
+            <p>I’ve spent so much time wondering what love should feel like—if it’s supposed to be all-consuming, if it should feel like a storm, or if it should make my heart race until I can’t breathe. But with you, I’ve learned that love isn’t about chaos. Love is peace. Love is knowing that no matter where I am, I have someone who will hold my hand and walk with me. Love is feeling safe in someone’s presence, knowing that even in silence, even in the simplest moments, my heart is exactly where it belongs.</p>
+            <p>And Matthew Levi, my heart belongs with you.</p>
+            <p>So, with all the love I have, with every beat of my heart, and with the deepest sincerity in my soul—yes. Yes, I want to be yours. Yes, I choose you, today and every day after. Yes, to the laughter, to the late-night conversations, to the adventures, to the tampuhan moments. Yes, to growing together, to facing every challenge side by side, to being the best versions of ourselves while holding each other close.</p>
+            <p>I don’t just want to be your girlfriend; I want to be your home, the one you turn to in joy and in sorrow. I want to love you in all the ways you deserve to be loved.</p>
+            <p>So, Matthew Levi, this is my yes. My wholehearted, undeniable, forever kind of yes.</p>
+        </div>
+    </div>
+    
+    <audio id="background-music" loop>
+        <source src="Bawat Daan - Ebe Dancel.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        function revealMessage() {
+            document.getElementById("message").style.display = "block";
+            document.getElementById("background-music").play();
+        }
+    </script>
+</body>
+</html>
+
+ 
